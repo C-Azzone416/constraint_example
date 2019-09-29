@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <!-- TODO: Percents example: layout_width mus be set as 0dp-->
+    <!-- TODO: Percents example: layout_width must be set as 0dp-->
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
