@@ -5,15 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <!-- TODO: Percents example: layout_width must be set as 0dp-->
-    <Button
-        android:layout_width="0dp"
+    <!-- TODO: Guidelines use example -->
+    <ImageView
+        android:id="@+id/windows_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#325B74"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/apple_image"
+        app:srcCompat="@drawable/windows_logo" />
+
+    <ImageView
+        android:id="@+id/apple_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#E6E6E6"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/android_image"
+        app:srcCompat="@drawable/apple_logo" />
+
+    <ImageView
+        android:id="@+id/android_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#159279"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android_os" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="percent button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.75" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="160dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
